@@ -8,7 +8,7 @@ read -p "Enter the user names (space separated): " -a names
 echo "User names are:"
 echo "${names[@]}"
 
-# Loop through the usernames and check if they exist in /etc/passwd
+# Loop check if users exist in /etc/passwd or not
 for user in "${names[@]}"; do
     if grep -q "^$user:" /etc/passwd; then
         echo "$user found and updating shell to nologin..."
