@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -e
 # Enter the usernames to set as /usr/sbin/nologin
 # -a to read into an array
 read -p "Enter the user names (space separated): " -a names  
